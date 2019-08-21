@@ -4,7 +4,7 @@ Real-Time Crypto Analysis built with React and NodeJS
 
 This is a demonstration of JavaScript mastery in a full-stack environment, as well as real-time data consumption and manipulation.
 
-#### Logic Breakdown
+### Logic Breakdown
 
 Since this is going to be a happy place for me while I work on this, I'm going to store notes here.
 
