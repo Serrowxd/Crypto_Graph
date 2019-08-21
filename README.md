@@ -1,4 +1,4 @@
-# Crypto_Graph
+# Crypto Graph
 
 Real-Time Crypto Analysis built with React and NodeJS
 
