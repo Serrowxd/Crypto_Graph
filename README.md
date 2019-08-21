@@ -6,6 +6,10 @@ This is a demonstration of JavaScript mastery in a full-stack environment, as we
 
 **For the initial chunk of the project, I will be hitting the API manually from the front-end, the back-end server logic will be added at a later date**
 
+**ALAS**
+
+**The project was shut down because I don't have enough access to real-time data API calls right now, I'll have to attack this at a later date.**
+
 ### How to use it
 
 `npm run scss` - starts the scss watcher, compiles everything from scss into css.
