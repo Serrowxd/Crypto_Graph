@@ -6,6 +6,16 @@ This is a demonstration of JavaScript mastery in a full-stack environment, as we
 
 **For the initial chunk of the project, I will be hitting the API manually from the front-end, the back-end server logic will be added at a later date**
 
+### How to use it
+
+`npm run scss` - starts the scss watcher, compiles everything from scss into css.
+
+`yarn start` - starts the react local server
+
+### Future Dated
+
+Move all SCSS from `styles.scss` into separate files, re-import into the main for clean style management.
+
 ### Logic Breakdown
 
 Since this is going to be a happy place for me while I work on this, I'm going to store notes here.
