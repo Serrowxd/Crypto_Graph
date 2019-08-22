@@ -43,9 +43,12 @@ The front-end will connect to that websocket that's constantly publishing data a
 
 | Task List                                                            | Started | Merged |
 | -------------------------------------------------------------------- | :-----: | :----: |
-| Back-end server should connect to a pre-built API                    |   No    |   No   |
+| Back-end server should contain a RNG based API and schema            |   No    |   No   |
 | Graphs should take-in data via API call                              |   No    |   No   |
+| Graphs should take-in data via websocket                             |   No    |   No   |
 | Design and build front-end layout (temp)                             |   No    |   No   |
 | A single graph should be visible on a dynamic route                  |   No    |   No   |
 | Single graphs should pull data through the same function as the main |   No    |   No   |
+| All graphs should have the same component, only taking in props      |   No    |   No   |
+| API calls should be handled via a shared action function             |   No    |   No   |
 | --                                                                   |   --    |   --   |
