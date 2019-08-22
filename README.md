@@ -8,7 +8,7 @@ This is a demonstration of JavaScript mastery in a full-stack environment, as we
 
 Backend will now be part of the MVP - it will generate random numbers that are stored in the schema that will be pushed to the front-end as part of a makeshift API. This will allow the simulation of real-time data flow without having a real-time data flow to attach to.
 
-# The Board
+## The Board
 
 | Task List                                                            | Started | Merged |
 | -------------------------------------------------------------------- | :-----: | :----: |
