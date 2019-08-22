@@ -4,11 +4,9 @@ Real-Time Crypto Analysis built with React and NodeJS
 
 This is a demonstration of JavaScript mastery in a full-stack environment, as well as real-time data consumption and manipulation.
 
-**For the initial chunk of the project, I will be hitting the API manually from the front-end, the back-end server logic will be added at a later date**
+**UPDATE**
 
-**ALAS**
-
-**The project was shut down because I don't have enough access to real-time data API calls right now, I'll have to attack this at a later date.**
+Backend will now be part of the MVP - it will generate random numbers that are stored in the schema that will be pushed to the front-end as part of a makeshift API. This will allow the simulation of real-time data flow without having a real-time data flow to attach to.
 
 ### How to use it
 
@@ -26,7 +24,7 @@ Since this is going to be a happy place for me while I work on this, I'm going t
 
 The server is going to hit the API, pulling down all the relevant information, then route it directly through a websocket that can be hit by an infinite number of users - thus keeping the number of hits I'm doing to the main API at a minimum, while still keeping real-time data flowing for all my users.
 
-The front-end will connect to that websocket that's constantly publishing data and display it using Plotly onto a single dashboard. Users will be able to see Bitcoin as the #1 currency, followed by two popular currencies below it. The left side will contain a fold-out navigation menu, while folded in it will have simple material icons, expanded it will show the text.
+The front-end will connect to that websocket that's constantly publishing data and display it using a graphing service onto a single dashboard. Users will be able to see their prefered as the #1 currency, or if it's not set they'll see Bitcoin, followed by two popular currencies below it. The left side will contain a fold-out navigation menu, while folded in it will have simple material icons, expanded it will show the text.
 
 **MVP - Minimum Viable Product**
 
