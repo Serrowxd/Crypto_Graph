@@ -8,6 +8,20 @@ This is a demonstration of JavaScript mastery in a full-stack environment, as we
 
 Backend will now be part of the MVP - it will generate random numbers that are stored in the schema that will be pushed to the front-end as part of a makeshift API. This will allow the simulation of real-time data flow without having a real-time data flow to attach to.
 
+# The Board
+
+| Task List                                                            | Started | Merged |
+| -------------------------------------------------------------------- | :-----: | :----: |
+| Back-end server should contain a RNG based API and schema            |   No    |   No   |
+| Graphs should take-in data via API call                              |   No    |   No   |
+| Graphs should take-in data via websocket                             |   No    |   No   |
+| Design and build front-end layout (temp)                             |   No    |   No   |
+| A single graph should be visible on a dynamic route                  |   No    |   No   |
+| Single graphs should pull data through the same function as the main |   No    |   No   |
+| All graphs should have the same component, only taking in props      |   No    |   No   |
+| API calls should be handled via a shared action function             |   No    |   No   |
+| --                                                                   |   --    |   --   |
+
 ### How to use it
 
 `npm run scss` - starts the scss watcher, compiles everything from scss into css.
@@ -38,17 +52,3 @@ The front-end will connect to that websocket that's constantly publishing data a
 - Users will be able to watch multiple currencies at once, using up to a 2x2 block of graphs.
 - A full front-end and back-end testing suite will be in place to check the build requirements.
 - A toggle for dark and light theme!
-
-# The Board
-
-| Task List                                                            | Started | Merged |
-| -------------------------------------------------------------------- | :-----: | :----: |
-| Back-end server should contain a RNG based API and schema            |   No    |   No   |
-| Graphs should take-in data via API call                              |   No    |   No   |
-| Graphs should take-in data via websocket                             |   No    |   No   |
-| Design and build front-end layout (temp)                             |   No    |   No   |
-| A single graph should be visible on a dynamic route                  |   No    |   No   |
-| Single graphs should pull data through the same function as the main |   No    |   No   |
-| All graphs should have the same component, only taking in props      |   No    |   No   |
-| API calls should be handled via a shared action function             |   No    |   No   |
-| --                                                                   |   --    |   --   |
