@@ -7,7 +7,6 @@ function Landing() {
 
   function modalHandler() {
     setModal(!modal);
-    console.log('Henlo');
   }
 
   function headerHanlderLogin() {
