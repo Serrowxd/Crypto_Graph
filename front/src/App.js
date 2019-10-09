@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Navigation } from './shared/shareReduce';
+import { Navigation, Charts } from './shared/shareReduce';
 import { Landing } from './components/compReduce';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   let [dropdown, setDropdown] = useState(false);
@@ -23,7 +24,15 @@ function App() {
         dropdownHandler={dropdownHandler}
         dropdown={dropdown}
       />
-      <Landing />
+
+      <Switch>
+        <Route exact path="/">
+          <Landing />
+        </Route>
+        <Route path="/graphs">
+          <Charts />
+        </Route>
+      </Switch>
     </div>
   );
 }

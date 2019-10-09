@@ -81,7 +81,6 @@ $landing-bkg: url('../../assets/blurredtest.png');
   justify-content: space-between;
   position: absolute;
 
-  background-color: transparent;
   box-sizing: border-box;
   color: $white;
   align-items: center;
@@ -89,6 +88,8 @@ $landing-bkg: url('../../assets/blurredtest.png');
 
   padding: 2rem;
   height: 2rem;
+
+  transition: 0.15s;
 
   .nav-items {
     display: flex;
@@ -101,6 +102,11 @@ $landing-bkg: url('../../assets/blurredtest.png');
         color: $blue;
         cursor: pointer;
       }
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   }
 
@@ -122,6 +128,10 @@ $landing-bkg: url('../../assets/blurredtest.png');
     opacity: 0;
     visibility: hidden;
   }
+}
+
+.sub-nav {
+  background-color: $blacker;
 }
 
 // Graph
