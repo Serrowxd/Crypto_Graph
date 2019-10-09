@@ -12,15 +12,19 @@ Backend will now be part of the MVP - it will generate random numbers that are s
 
 | Task List                                                            | Started | Merged |
 | -------------------------------------------------------------------- | :-----: | :----: |
-| Back-end server should contain a RNG based API and schema            |   No    |   No   |
-| Back-end server should use GraphQL                                   |   No    |   No   |
-| Graphs should take-in data via API call                              |   No    |   No   |
-| Graphs should take-in data via websocket                             |   No    |   No   |
-| Design and build front-end layout (temp)                             |   No    |   No   |
-| A single graph should be visible on a dynamic route                  |   No    |   No   |
-| Single graphs should pull data through the same function as the main |   No    |   No   |
+| **!! Front End !!**                                                  |   --    |   --   |
+| Front-End needs to be built and designed (wireframe)                 |   Yes   |   No   |
+| Front-End needs to be built and designed (polish)                    |   No    |   No   |
+| Graphs should take-in data via API call (MVP)                        |   No    |   No   |
+| Graphs should take-in data via websocket (stretch)                   |   No    |   No   |
 | All graphs should have the same component, only taking in props      |   No    |   No   |
 | API calls should be handled via a shared action function             |   No    |   No   |
+| Single graphs should pull data through the same function as the main |   No    |   No   |
+| **!! Back-End !!**                                                   |   --    |   --   |
+| Back-end server should contain a RNG based API and schema            |   No    |   No   |
+| Back-end server should use GraphQL                                   |   No    |   No   |
+| A single graph should be visible on a dynamic route                  |   No    |   No   |
+| _Add Backend Tasks_                                                  |   No    |   No   |
 | --                                                                   |   --    |   --   |
 
 ### How to use it
@@ -28,6 +32,8 @@ Backend will now be part of the MVP - it will generate random numbers that are s
 `npm run scss` - starts the scss watcher, compiles everything from scss into css.
 
 `yarn start` - starts the react local server
+
+Currently there is no working back-end, I will update the readme when it's properly functional.
 
 ### Future Dated
 
