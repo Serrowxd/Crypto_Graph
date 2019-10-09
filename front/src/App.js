@@ -4,9 +4,11 @@ import { Landing } from './components/compReduce';
 
 function App() {
   let [dropdown, setDropdown] = useState(false);
+  let [login, setLogin] = useState(false);
 
   function loginHandler() {
-    console.log('Henlo (OvO")');
+    setLogin(!login);
+    dropdownHandler();
   }
 
   function dropdownHandler() {
@@ -15,7 +17,12 @@ function App() {
 
   return (
     <div className="global-container">
-      <Navigation login={'Login'} loginHandler={loginHandler} dropdownHandler={dropdownHandler} dropdown={dropdown} />
+      <Navigation
+        login={login ? 'Login' : 'Logout'}
+        loginHandler={loginHandler}
+        dropdownHandler={dropdownHandler}
+        dropdown={dropdown}
+      />
       <Landing />
     </div>
   );
