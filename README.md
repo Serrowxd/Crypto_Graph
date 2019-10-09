@@ -14,7 +14,7 @@ Backend will now be part of the MVP - it will generate random numbers that are s
 | -------------------------------------------------------------------- | :-----: | :----: |
 | **!! Front End !!**                                                  |   --    |   --   |
 | Front-End needs to be built and designed (wireframe)                 |   Yes   |   No   |
-| Front-End needs to be built and designed (polish)                    |   No    |   No   |
+| Front-End needs to be polished                                       |   No    |   No   |
 | Graphs should take-in data via API call (MVP)                        |   No    |   No   |
 | Graphs should take-in data via websocket (stretch)                   |   No    |   No   |
 | All graphs should have the same component, only taking in props      |   No    |   No   |
