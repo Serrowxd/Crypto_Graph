@@ -13,6 +13,7 @@ Backend will now be part of the MVP - it will generate random numbers that are s
 | Task List                                                            | Started | Merged |
 | -------------------------------------------------------------------- | :-----: | :----: |
 | Back-end server should contain a RNG based API and schema            |   No    |   No   |
+| Back-end server should use GraphQL                                   |   No    |   No   |
 | Graphs should take-in data via API call                              |   No    |   No   |
 | Graphs should take-in data via websocket                             |   No    |   No   |
 | Design and build front-end layout (temp)                             |   No    |   No   |
@@ -38,7 +39,7 @@ Since this is going to be a happy place for me while I work on this, I'm going t
 
 The server is going to hit the API, pulling down all the relevant information, then route it directly through a websocket that can be hit by an infinite number of users - thus keeping the number of hits I'm doing to the main API at a minimum, while still keeping real-time data flowing for all my users.
 
-The front-end will connect to that websocket that's constantly publishing data and display it using a graphing service onto a single dashboard. Users will be able to see their prefered as the #1 currency, or if it's not set they'll see Bitcoin, followed by two popular currencies below it. The left side will contain a fold-out navigation menu, while folded in it will have simple material icons, expanded it will show the text.
+The front-end will connect to that websocket that's constantly publishing data and display it using a graphing service onto a single dashboard. Users will be able to see their prefered as the #1 currency, or if it's not set they'll see Bitcoin, followed by two popular currencies below it. The left side will contain a fold-out Navigation menu, while folded in it will have simple material icons, expanded it will show the text.
 
 **MVP - Minimum Viable Product**
 

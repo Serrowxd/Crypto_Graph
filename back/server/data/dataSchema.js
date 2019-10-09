@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const userSchema = new mongoose.Schema({
+const dataSchema = new mongoose.Schema({
   // _id: mongoose.Schema.Types.ObjectId,
   username: String,
   summary: String,
@@ -13,10 +13,10 @@ const userSchema = new mongoose.Schema({
 
 // pre-save
 
-userSchema.pre('save', function(next) {
+dataSchema.pre('save', function(next) {
   console.log('pre save hook');
 
   next();
 });
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('User', dataSchema);

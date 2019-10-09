@@ -1,3 +1,7 @@
+html,
+body {
+  font-family: 'Maven Pro', sans-serif; }
+
 .app {
   padding: 40px; }
 
@@ -20,3 +24,54 @@ button {
   display: inline-block;
   left: 90px;
   top: -7px; }
+
+.btn {
+  margin: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  transition: 0.15s; }
+  .btn:hover {
+    border: 1px solid #00bcd4;
+    background-color: #00bcd4;
+    cursor: pointer; }
+
+.global-container {
+  width: 100%;
+  height: 100%; }
+
+.landing-wrapper {
+  display: flex;
+  height: 100%; }
+
+.navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2f2f2f;
+  color: #fff;
+  align-items: center;
+  padding: 1rem;
+  height: 2rem; }
+  .navigation-wrapper .nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem; }
+    .navigation-wrapper .nav-items p {
+      transition: 0.15s; }
+      .navigation-wrapper .nav-items p:hover {
+        color: #00bcd4;
+        cursor: pointer; }
+  .navigation-wrapper .nav-drop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 10rem;
+    height: 15rem;
+    background-color: #2f2f2f;
+    right: 0;
+    margin-top: 2.5rem; }
+  .navigation-wrapper .hidden {
+    opacity: 0;
+    visibility: hidden; }
