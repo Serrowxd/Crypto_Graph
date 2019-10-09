@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { Charts } from '../shared/shareReduce';
 
 function Landing() {
   return (
     <div className="landing-wrapper">
-      <h1> Henlo (OvO")</h1>
+      <Charts />
     </div>
   );
 }

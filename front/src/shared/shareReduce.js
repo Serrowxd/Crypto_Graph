@@ -1,3 +1,4 @@
 import Navigation from './Nav';
+import Charts from './Charts';
 
-export { Navigation };
+export { Navigation, Charts };

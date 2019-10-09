@@ -43,6 +43,8 @@ button {
 
 .landing-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%; }
 
 .navigation-wrapper {
