@@ -3,7 +3,7 @@ import React from 'react';
 function Navigation(props) {
   return (
     <div className="navigation-wrapper">
-      <h1>Cyrpto Graph</h1>
+      <h1>Crypto Graph</h1>
       <div className="nav-items">
         <p>Home</p>
         <p>Graphs</p>
