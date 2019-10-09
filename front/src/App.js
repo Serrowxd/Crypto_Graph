@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="global-container">
       <Navigation
-        login={login ? 'Login' : 'Logout'}
+        login={login ? 'Logout' : 'Login'}
         loginHandler={loginHandler}
         dropdownHandler={dropdownHandler}
         dropdown={dropdown}
