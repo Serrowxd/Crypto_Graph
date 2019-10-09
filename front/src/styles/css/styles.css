@@ -15,22 +15,47 @@ body {
     cursor: pointer; }
 
 .global-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%; }
+  height: 100vh; }
 
 .landing-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; }
+  height: 100%;
+  background: url("../../assets/blurredtest.png");
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  color: white; }
+
+.jumbo {
+  text-align: center; }
+  .jumbo h1 {
+    font-size: 6rem;
+    padding: 1rem; }
+  .jumbo p {
+    font-size: 1.5rem;
+    padding: 1rem; }
+
+.jumbo-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem; }
 
 .navigation-wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: #2f2f2f;
+  position: absolute;
+  background-color: transparent;
+  box-sizing: border-box;
   color: #fff;
   align-items: center;
-  padding: 1rem;
+  width: 100%;
+  padding: 2rem;
   height: 2rem; }
   .navigation-wrapper .nav-items {
     display: flex;
@@ -47,10 +72,11 @@ body {
     justify-content: center;
     position: absolute;
     width: 10rem;
-    height: 15rem;
-    background-color: #2f2f2f;
+    height: 5rem;
+    background-color: #242424;
     right: 0;
-    margin-top: 2.5rem; }
+    margin-top: 2.25rem;
+    margin-right: 0.5rem; }
   .navigation-wrapper .hidden {
     opacity: 0;
     visibility: hidden; }
