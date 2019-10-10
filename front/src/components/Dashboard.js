@@ -16,7 +16,7 @@ function Dashboard(props) {
             <Link to="/graphs" onClick={props.window} className="btn smaller">
               Graphs
             </Link>
-            <Link to="/" onClick={props.window} className="btn smaller">
+            <Link to="/settings" onClick={props.window} className="btn smaller">
               Settings
             </Link>
           </div>

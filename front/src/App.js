@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navigation, Charts } from './shared/shareReduce';
-import { Landing, Dashboard, Account, Graphs } from './components/compReduce';
+import { Landing, Dashboard, Account, Graphs, Settings } from './components/compReduce';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -55,6 +55,9 @@ function App() {
         </Route>
         <Route path="/account">
           <Account />
+        </Route>
+        <Route path="/settings">
+          <Settings />
         </Route>
       </Switch>
     </div>

@@ -127,6 +127,15 @@ body {
   background-color: #2f2f2f;
   color: white; }
 
+.settings-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #2f2f2f;
+  color: white; }
+
 .navigation-wrapper {
   display: flex;
   justify-content: space-between;

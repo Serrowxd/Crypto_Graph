@@ -175,6 +175,17 @@ $landing-bkg: url('../../assets/blurredtest.png');
   color: white;
 }
 
+// Settings
+.settings-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: $black;
+  color: white;
+}
+
 // !! Shared Components
 
 // Navigation
