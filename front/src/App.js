@@ -6,10 +6,14 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   let [dropdown, setDropdown] = useState(false);
   let [login, setLogin] = useState(true);
+  let [user, setUser] = useState('Kevin');
+  let [crypto, setCrypto] = useState('Bitcoin');
 
   function loginHandler() {
     setLogin(!login);
     dropdownHandler();
+    setUser('Kevin');
+    setCrypto('Bitcoin');
   }
 
   function dropdownHandler() {
@@ -27,7 +31,7 @@ function App() {
 
       <Switch>
         <Route exact path="/">
-          {login ? <Dashboard /> : <Landing />}
+          {login ? <Dashboard user={user} crypto={crypto} /> : <Landing />}
         </Route>
         <Route path="/graphs">
           <Charts />
