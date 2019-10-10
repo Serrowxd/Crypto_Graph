@@ -11,6 +11,7 @@ class Charts extends Component {
       optionsMixedChart: {
         chart: {
           id: 'basic-bar',
+          foreColor: '#FFF',
           toolbar: {
             show: false,
           },
@@ -241,13 +242,9 @@ class Charts extends Component {
               options={this.state.optionsMixedChart}
               series={this.state.seriesMixedChart}
               type="line"
-              width="500"
+              width="700"
             />
           </div>
-
-          <p className="col">
-            <button onClick={this.updateCharts}>Update!</button>
-          </p>
         </div>
       </div>
     );

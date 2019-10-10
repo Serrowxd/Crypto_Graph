@@ -75,7 +75,10 @@ body {
   width: 50%; }
 
 .right-dashboard {
-  justify-content: center; }
+  justify-content: center;
+  text-align: center; }
+  .right-dashboard h1 {
+    font-size: 2rem; }
 
 .left-dashboard {
   justify-content: center;
@@ -175,10 +178,13 @@ body {
   background-color: #242424; }
 
 .app {
-  padding: 40px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .row {
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center; }

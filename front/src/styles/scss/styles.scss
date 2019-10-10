@@ -112,6 +112,11 @@ $landing-bkg: url('../../assets/blurredtest.png');
 
 .right-dashboard {
   justify-content: center;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 .left-dashboard {
@@ -244,11 +249,14 @@ $landing-bkg: url('../../assets/blurredtest.png');
 
 // Charts
 .app {
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .row {
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
