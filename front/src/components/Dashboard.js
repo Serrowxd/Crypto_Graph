@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Charts } from '../shared/shareReduce';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function Dashboard(props) {
   return (
@@ -9,9 +10,15 @@ function Dashboard(props) {
         <div className="left-dashboard">
           <h1>Welcome, {props.user}</h1>
           <div className="dash-user-buttons">
-            <div className="btn smaller">Account</div>
-            <div className="btn smaller">Graphs</div>
-            <div className="btn smaller">Settings</div>
+            <Link to="/" onClick={props.window} className="btn smaller">
+              Account
+            </Link>
+            <Link to="/graphs" onClick={props.window} className="btn smaller">
+              Graphs
+            </Link>
+            <Link to="/" onClick={props.window} className="btn smaller">
+              Settings
+            </Link>
           </div>
         </div>
         {/* Suggested Graph */}

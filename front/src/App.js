@@ -1,13 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navigation, Charts } from './shared/shareReduce';
 import { Landing, Dashboard } from './components/compReduce';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-  let [dropdown, setDropdown] = useState(false);
-  let [login, setLogin] = useState(true);
-  let [user, setUser] = useState('Kevin');
-  let [crypto, setCrypto] = useState('Bitcoin');
+  const [dropdown, setDropdown] = useState(false);
+  const [login, setLogin] = useState(true);
+  const [user, setUser] = useState('Kevin');
+  const [crypto, setCrypto] = useState('Bitcoin');
+  const [navtype, setNavType] = useState(false);
+
+  function windowChecker() {
+    setTimeout(() => {
+      if (window.location.pathname !== '/') {
+        setNavType(true);
+      } else {
+        setNavType(false);
+      }
+    }, 0);
+  }
+
+  useEffect(() => {
+    windowChecker();
+  }, []);
 
   function loginHandler() {
     setLogin(!login);
@@ -26,12 +41,14 @@ function App() {
         login={login ? 'Logout' : 'Login'}
         loginHandler={loginHandler}
         dropdownHandler={dropdownHandler}
+        window={windowChecker}
         dropdown={dropdown}
+        nav={navtype}
       />
 
       <Switch>
         <Route exact path="/">
-          {login ? <Dashboard user={user} crypto={crypto} /> : <Landing login={loginHandler} />}
+          {login ? <Dashboard user={user} crypto={crypto} window={windowChecker} /> : <Landing login={loginHandler} />}
         </Route>
         <Route path="/graphs">
           <Charts />

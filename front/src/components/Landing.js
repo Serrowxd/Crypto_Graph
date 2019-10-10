@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Charts, LoginModal } from '../shared/shareReduce';
+import { LoginModal } from '../shared/shareReduce';
 
 function Landing(props) {
   const [modal, setModal] = useState(false);

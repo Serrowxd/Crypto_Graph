@@ -1,6 +1,10 @@
 html,
 body {
   font-family: 'Maven Pro', sans-serif; }
+  html a,
+  body a {
+    text-decoration: none;
+    color: inherit; }
 
 .btn {
   margin: 0.5rem;
@@ -125,9 +129,6 @@ body {
       .navigation-wrapper .nav-items p:hover {
         color: #00bcd4;
         cursor: pointer; }
-    .navigation-wrapper .nav-items a {
-      text-decoration: none;
-      color: inherit; }
   .navigation-wrapper .nav-drop {
     display: flex;
     flex-direction: column;
