@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Navigation, Charts } from './shared/shareReduce';
-import { Landing } from './components/compReduce';
+import { Landing, Dashboard } from './components/compReduce';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   let [dropdown, setDropdown] = useState(false);
-  let [login, setLogin] = useState(false);
+  let [login, setLogin] = useState(true);
 
   function loginHandler() {
     setLogin(!login);
@@ -27,7 +27,7 @@ function App() {
 
       <Switch>
         <Route exact path="/">
-          <Landing />
+          {login ? <Dashboard /> : <Landing />}
         </Route>
         <Route path="/graphs">
           <Charts />

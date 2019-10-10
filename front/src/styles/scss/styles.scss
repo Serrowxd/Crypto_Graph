@@ -9,6 +9,7 @@ body {
 
 $blacker: #242424;
 $black: #2f2f2f;
+$blackish: #424242;
 $white: #fff;
 $blue: #00bcd4;
 $landing-bkg: url('../../assets/blurredtest.png');
@@ -71,6 +72,57 @@ $landing-bkg: url('../../assets/blurredtest.png');
   align-items: center;
   justify-content: space-around;
   padding: 1rem;
+}
+
+// Dashboard
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $black;
+  color: $white;
+}
+
+.top-dashboard {
+  display: flex;
+  width: 100%;
+  height: 75%;
+}
+
+.left-dashboard,
+.right-dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.left-dashboard {
+  background-color: $blackish;
+}
+
+.footer-dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 25%;
+  padding: 1rem;
+  background-color: $blacker;
+}
+
+.footer-container {
+  display: flex;
+  height: 75%;
+}
+
+.left-feed,
+.right-feed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
 // !! Shared Components
