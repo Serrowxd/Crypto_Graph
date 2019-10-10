@@ -8,7 +8,11 @@ function Dashboard(props) {
         {/* Welcome Name */}
         <div className="left-dashboard">
           <h1>Welcome, {props.user}</h1>
-          <div className="dash-user-buttons"></div>
+          <div className="dash-user-buttons">
+            <div className="btn smaller">Account</div>
+            <div className="btn smaller">Graphs</div>
+            <div className="btn smaller">Settings</div>
+          </div>
         </div>
         {/* Suggested Graph */}
         <div className="right-dashboard">

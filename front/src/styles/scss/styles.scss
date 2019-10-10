@@ -32,6 +32,13 @@ $landing-bkg: url('../../assets/blurredtest.png');
   }
 }
 
+.smaller {
+  margin: 0.25rem;
+  padding: 0.5rem;
+
+  width: 5rem;
+}
+
 // !! Components
 
 // Global
@@ -93,13 +100,28 @@ $landing-bkg: url('../../assets/blurredtest.png');
 .right-dashboard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 50%;
 }
 
+.right-dashboard {
+  justify-content: center;
+}
+
 .left-dashboard {
+  justify-content: center;
   background-color: $blackish;
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.dash-user-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding: 2rem;
 }
 
 .footer-dashboard {
