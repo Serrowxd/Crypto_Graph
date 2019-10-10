@@ -17,6 +17,7 @@ $black: #2f2f2f;
 $blackish: #424242;
 $white: #fff;
 $blue: #00bcd4;
+
 $landing-bkg: url('../../assets/blurredtest.png');
 
 // !! Misc
@@ -152,6 +153,28 @@ $landing-bkg: url('../../assets/blurredtest.png');
   width: 50%;
 }
 
+// Account
+.account-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: $black;
+  color: white;
+}
+
+// Graphs
+.graphs-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: $black;
+  color: white;
+}
+
 // !! Shared Components
 
 // Navigation
@@ -208,7 +231,7 @@ $landing-bkg: url('../../assets/blurredtest.png');
   background-color: $blacker;
 }
 
-// Graph
+// Charts
 .app {
   padding: 40px;
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navigation, Charts } from './shared/shareReduce';
-import { Landing, Dashboard } from './components/compReduce';
+import { Landing, Dashboard, Account, Graphs } from './components/compReduce';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -51,7 +51,10 @@ function App() {
           {login ? <Dashboard user={user} crypto={crypto} window={windowChecker} /> : <Landing login={loginHandler} />}
         </Route>
         <Route path="/graphs">
-          <Charts />
+          <Graphs />
+        </Route>
+        <Route path="/account">
+          <Account />
         </Route>
       </Switch>
     </div>
