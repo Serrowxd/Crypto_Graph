@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Charts, LoginModal } from '../shared/shareReduce';
 
-function Landing() {
+function Landing(props) {
   const [modal, setModal] = useState(false);
   const [header, setHeader] = useState();
 
@@ -9,12 +9,17 @@ function Landing() {
     setModal(!modal);
   }
 
-  function headerHanlderLogin() {
+  function loginModalHandler() {
+    setModal(!modal);
+    props.login();
+  }
+
+  function headerLoginHandler() {
     setHeader('Login to your Account');
     modalHandler();
   }
 
-  function headerHandlerAccount() {
+  function headerAccountHandler() {
     setHeader('Create a new Account');
     modalHandler();
   }
@@ -25,16 +30,16 @@ function Landing() {
         <h1>Crypto Graph</h1>
         <p>Your #1 Choice for Real-Time Crypto Analysis</p>
         <div className="jumbo-buttons">
-          <div className="btn" onClick={headerHanlderLogin}>
+          <div className="btn" onClick={headerLoginHandler}>
             Existing User
           </div>
-          <div className="btn" onClick={headerHandlerAccount}>
+          <div className="btn" onClick={headerAccountHandler}>
             Create Account
           </div>
         </div>
       </div>
 
-      <LoginModal header={header} showModal={modal} modalHandler={modalHandler} />
+      <LoginModal header={header} showModal={modal} modalHandler={modalHandler} loginModalHandler={loginModalHandler} />
     </div>
   );
 }

@@ -39,6 +39,10 @@ Currently there is no working back-end, I will update the readme when it's prope
 
 Move all SCSS from `styles.scss` into separate files, re-import into the main for clean style management.
 
+### Known Bugs
+
+- Clicking the Existing User or Create Account pass-throughs that take you to the dashboard will cause the navigation dropdown for login/logout to trigger. This does not happen when you click the login button direclty.
+
 ### Logic Breakdown
 
 Since this is going to be a happy place for me while I work on this, I'm going to store notes here.

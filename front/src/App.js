@@ -31,7 +31,7 @@ function App() {
 
       <Switch>
         <Route exact path="/">
-          {login ? <Dashboard user={user} crypto={crypto} /> : <Landing />}
+          {login ? <Dashboard user={user} crypto={crypto} /> : <Landing login={loginHandler} />}
         </Route>
         <Route path="/graphs">
           <Charts />

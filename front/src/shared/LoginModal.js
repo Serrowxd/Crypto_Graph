@@ -14,10 +14,10 @@ function LoginModal(props) {
           <input />
         </div>
         <div className="buttons">
-          <div className="btn" onClick={props.modalHandler}>
+          <div className="btn" onClick={props.loginModalHandler}>
             Submit
           </div>
-          <div className="btn" onClick={props.modalHandler}>
+          <div className="btn" onClick={props.loginModalHandler}>
             Cancel
           </div>
         </div>
