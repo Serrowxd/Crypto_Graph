@@ -1,5 +1,5 @@
 import React from 'react';
-import { Charts } from '../shared/shareReduce';
+import { Charts, FeedEntry } from '../shared/shareReduce';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function Dashboard(props) {
@@ -30,13 +30,15 @@ function Dashboard(props) {
 
       {/* News Feed Footer */}
       <div className="footer-dashboard">
-        <h1>News Feed</h1>
+        <h1 className="feed-title">News Feed</h1>
         <div className="footer-container">
           <div className="left-feed">
-            <h1>Henlo(OvO")</h1>
+            <FeedEntry />
+            <FeedEntry />
           </div>
           <div className="right-feed">
-            <h1>Henlo(OvO")</h1>
+            <FeedEntry />
+            <FeedEntry />
           </div>
         </div>
       </div>

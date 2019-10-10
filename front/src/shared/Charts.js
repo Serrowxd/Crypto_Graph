@@ -246,6 +246,9 @@ class Charts extends Component {
             />
           </div>
         </div>
+        <div class="btn smaller" onClick={this.updateCharts}>
+          Update
+        </div>
       </div>
     );
   }
