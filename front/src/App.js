@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   const [dropdown, setDropdown] = useState(false);
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true);
   const [user, setUser] = useState('Kevin');
   const [crypto, setCrypto] = useState('Bitcoin');
   const [navtype, setNavType] = useState(false);
