@@ -99,7 +99,7 @@ $landing-bkg: url('../../assets/blurredtest.png');
 .top-dashboard {
   display: flex;
   width: 100%;
-  height: 75%;
+  height: 100%;
   transition: 0.15s;
 }
 
@@ -141,26 +141,25 @@ $landing-bkg: url('../../assets/blurredtest.png');
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 30%;
+  height: 50%;
   background-color: $blacker;
 
   transition: 0.15s;
 }
 
-.extended-dash {
-  height: 95%;
-}
-
 .footer-tuck {
-  height: 5%;
+  height: 8%;
+  justify-content: center;
 
   .footer-container {
     visibility: hidden;
     opacity: 0;
+    display: none;
   }
 }
 
 .feed-title {
+  display: flex;
   font-size: 1.25rem;
   padding: 1rem;
   transition: 0.15s;

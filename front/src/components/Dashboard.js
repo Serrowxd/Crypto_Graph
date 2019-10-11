@@ -11,7 +11,7 @@ function Dashboard(props) {
 
   return (
     <div className="dashboard-wrapper">
-      <div className={footer ? 'top-dashboard extended-dash' : 'top-dashboard'}>
+      <div className="top-dashboard">
         {/* Welcome Name */}
         <div className="left-dashboard">
           <h1>Welcome, {props.user}</h1>
