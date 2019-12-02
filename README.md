@@ -8,13 +8,16 @@ This is a demonstration of JavaScript mastery in a full-stack environment, as we
 
 Backend will now be part of the MVP - it will generate random numbers that are stored in the schema that will be pushed to the front-end as part of a makeshift API. This will allow the simulation of real-time data flow without having a real-time data flow to attach to.
 
+Backend will be it's own separate repository to allow for front-end deployments.
+
 ## The Board
 
 | Task List                                                            | Started | Merged |
 | -------------------------------------------------------------------- | :-----: | :----: |
 | **!! Front End !!**                                                  |   --    |   --   |
-| Front-End needs to be built and designed (wireframe)                 |   Yes   |   No   |
-| Cleanup SCSS files, reused wrappers should be one class name         |   Yes   |   No   |
+| Front-End needs to be built and designed (wireframe)                 |   Yes   |  Yes   |
+| Cleanup SCSS files, reused wrappers should be one class name         |   Yes   |  Yes   |
+| Dark and Light Theme transition                                      |   Yes   |  Yes   |
 | Front-End needs to be polished                                       |   No    |   No   |
 | Graphs should take-in data via API call (MVP)                        |   No    |   No   |
 | Graphs should take-in data via websocket (stretch)                   |   No    |   No   |
