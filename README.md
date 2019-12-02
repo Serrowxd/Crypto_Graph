@@ -4,6 +4,8 @@ Real-Time Crypto Analysis built with React and NodeJS
 
 This is a demonstration of JavaScript mastery in a full-stack environment, as well as real-time data consumption and manipulation.
 
+[Deployment](https://happy-archimedes-9b9973.netlify.com) -- Please view it at 1920x1080, it's not made for anything lower at the moment.
+
 **UPDATE**
 
 Backend will now be part of the MVP - it will generate random numbers that are stored in the schema that will be pushed to the front-end as part of a makeshift API. This will allow the simulation of real-time data flow without having a real-time data flow to attach to.
