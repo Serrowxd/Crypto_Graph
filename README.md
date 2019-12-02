@@ -6,6 +6,8 @@ This is a demonstration of JavaScript mastery in a full-stack environment, as we
 
 [Deployment](https://happy-archimedes-9b9973.netlify.com) -- Please view it at 1920x1080, it's not made for anything lower at the moment.
 
+The deployment is currently in development state, so it will take you directly to the dashboard. To see the login features and landing page, you'll have to logout. I'll keep this updated for any future changes to this portion of the functionality.
+
 **UPDATE**
 
 Backend will now be part of the MVP - it will generate random numbers that are stored in the schema that will be pushed to the front-end as part of a makeshift API. This will allow the simulation of real-time data flow without having a real-time data flow to attach to.
