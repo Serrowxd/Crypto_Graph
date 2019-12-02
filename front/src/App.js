@@ -9,6 +9,7 @@ function App() {
   const [user, setUser] = useState('Kevin');
   const [crypto, setCrypto] = useState('Bitcoin');
   const [navtype, setNavType] = useState(false);
+  const [theme, setTheme] = useState(false);
 
   function windowChecker() {
     setTimeout(() => {
@@ -18,6 +19,11 @@ function App() {
         setNavType(false);
       }
     }, 0);
+  }
+
+  function themeUpdater() {
+    setTheme(!theme);
+    console.log(theme);
   }
 
   useEffect(() => {
@@ -36,7 +42,7 @@ function App() {
   }
 
   return (
-    <div className="global-container">
+    <div className={theme ? 'global-container white-theme' : 'global-container'}>
       <Navigation
         login={login ? 'Logout' : 'Login'}
         loginHandler={loginHandler}
@@ -57,7 +63,7 @@ function App() {
           <Account />
         </Route>
         <Route path="/settings">
-          <Settings />
+          <Settings updateTheme={themeUpdater} />
         </Route>
       </Switch>
     </div>

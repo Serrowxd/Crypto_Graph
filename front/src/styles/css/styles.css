@@ -10,7 +10,7 @@ body {
   margin: 0.5rem;
   padding: 1rem;
   text-align: center;
-  border: 1px solid #fff;
+  border: 1px solid #f5f5f5;
   border-radius: 4px;
   transition: 0.15s; }
   .btn:hover {
@@ -22,6 +22,52 @@ body {
   margin: 0.25rem;
   padding: 0.5rem;
   width: 5rem; }
+
+.white-theme .btn {
+  border: 1px solid #2f2f2f; }
+  .white-theme .btn:hover {
+    background-color: #d49b00;
+    border: 1px solid #d49b00; }
+
+.white-theme .dashboard-wrapper {
+  background-color: #e0e0e0;
+  color: #2f2f2f; }
+
+.white-theme .left-dashboard {
+  background-color: #f5f5f5; }
+
+.white-theme .footer-dashboard {
+  background-color: #9e9e9e; }
+
+.white-theme .feed-title:hover {
+  color: #d49b00; }
+
+.white-theme .feed-item {
+  background-color: #e0e0e0; }
+  .white-theme .feed-item:hover {
+    background-color: rgba(212, 155, 0, 0.5); }
+
+.white-theme .account-wrapper,
+.white-theme .graphs-wrapper,
+.white-theme .settings-wrapper {
+  background-color: #f5f5f5;
+  color: #2f2f2f; }
+
+.white-theme .navigation-wrapper {
+  color: #2f2f2f; }
+  .white-theme .navigation-wrapper .nav-items p:hover {
+    color: #d49b00; }
+  .white-theme .navigation-wrapper .nav-drop {
+    background-color: transparent; }
+
+.white-theme .sub-nav {
+  background-color: #9e9e9e; }
+
+.white-theme button {
+  background: #e0e0e0; }
+
+.white-theme .modal {
+  background-color: rgba(158, 158, 158, 0.8); }
 
 .global-container {
   display: flex;
@@ -38,7 +84,7 @@ body {
   background-position: center;
   background-size: cover;
   background-position: center;
-  color: white; }
+  color: #f5f5f5; }
 
 .jumbo {
   text-align: center; }
@@ -60,7 +106,7 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: #2f2f2f;
-  color: #fff; }
+  color: #f5f5f5; }
 
 .top-dashboard {
   display: flex;
@@ -158,7 +204,7 @@ body {
   align-items: center;
   height: 100%;
   background-color: #2f2f2f;
-  color: white; }
+  color: #f5f5f5; }
 
 .graphs-wrapper {
   display: flex;
@@ -167,7 +213,7 @@ body {
   align-items: center;
   height: 100%;
   background-color: #2f2f2f;
-  color: white; }
+  color: #f5f5f5; }
 
 .settings-wrapper {
   display: flex;
@@ -176,14 +222,14 @@ body {
   align-items: center;
   height: 100%;
   background-color: #2f2f2f;
-  color: white; }
+  color: #f5f5f5; }
 
 .navigation-wrapper {
   display: flex;
   justify-content: space-between;
   position: absolute;
   box-sizing: border-box;
-  color: #fff;
+  color: #f5f5f5;
   align-items: center;
   width: 100%;
   padding: 2rem;
@@ -229,12 +275,12 @@ body {
   align-items: center; }
 
 button {
-  background: #f3f3f3;
-  border: 1px solid #ddd;
+  background: #e0e0e0;
+  border: 1px solid #f5f5f5;
   border-radius: 4px;
   height: 40px;
   width: 120px;
-  color: #333;
+  color: #2f2f2f;
   font-size: 14px;
   cursor: pointer;
   position: relative;
