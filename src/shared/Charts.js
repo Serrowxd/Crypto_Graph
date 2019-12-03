@@ -7,11 +7,31 @@ class Charts extends Component {
 
     this.updateCharts = this.updateCharts.bind(this);
 
+    // Theme Object
+    const colorTheme = {
+      light: {
+        white: '#f5f5f5',
+        whiteish: '#e0e0e0',
+        whiter: '#9e9e9e',
+      },
+      dark: {
+        black: '#2f2f2f',
+        blacker: '#242424',
+        blackish: '#424242',
+      },
+      colors: {
+        blue: '#00bcd4',
+        orange: '#e6a800',
+        green: '#8bc34a',
+      },
+    };
+
+    // ChartJS Please Work
     this.state = {
       optionsMixedChart: {
         chart: {
-          id: 'basic-bar',
-          foreColor: '#FFF',
+          id: 'bar',
+          foreColor: props.themeSwap ? colorTheme.dark.black : colorTheme.light.white,
           toolbar: {
             show: false,
           },
@@ -68,7 +88,7 @@ class Charts extends Component {
             hollow: {
               margin: 0,
               size: '70%',
-              background: '#fff',
+              background: props.themeSwap ? colorTheme.dark.black : colorTheme.light.white,
               image: undefined,
               imageOffsetX: 0,
               imageOffsetY: 0,
@@ -82,7 +102,7 @@ class Charts extends Component {
               },
             },
             track: {
-              background: '#fff',
+              background: props.themeSwap ? colorTheme.dark.black : colorTheme.light.white,
               strokeWidth: '67%',
               margin: 0, // margin is in pixels
               dropShadow: {
@@ -99,14 +119,14 @@ class Charts extends Component {
               name: {
                 offsetY: -20,
                 show: true,
-                color: '#888',
+                color: props.themeSwap ? colorTheme.light.white : colorTheme.dark.black,
                 fontSize: '13px',
               },
               value: {
                 formatter: function(val) {
                   return val;
                 },
-                color: '#111',
+                color: props.themeSwap ? colorTheme.light.whiter : colorTheme.dark.blacker,
                 fontSize: '30px',
                 show: true,
               },

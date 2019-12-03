@@ -21,11 +21,13 @@ function App() {
     }, 0);
   }
 
+  // Handles the theme swap
   function themeUpdater() {
     setTheme(!theme);
     console.log(theme);
   }
 
+  // Checks for navigation updates
   useEffect(() => {
     windowChecker();
   }, []);
@@ -54,7 +56,11 @@ function App() {
 
       <Switch>
         <Route exact path="/">
-          {login ? <Dashboard user={user} crypto={crypto} window={windowChecker} /> : <Landing login={loginHandler} />}
+          {login ? (
+            <Dashboard user={user} crypto={crypto} themeSwap={theme} window={windowChecker} />
+          ) : (
+            <Landing login={loginHandler} />
+          )}
         </Route>
         <Route path="/graphs">
           <Graphs />

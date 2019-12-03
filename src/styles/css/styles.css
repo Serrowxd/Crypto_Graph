@@ -26,8 +26,8 @@ body {
 .white-theme .btn {
   border: 1px solid #2f2f2f; }
   .white-theme .btn:hover {
-    background-color: #d49b00;
-    border: 1px solid #d49b00; }
+    background-color: #8bc34a;
+    border: 1px solid #8bc34a; }
 
 .white-theme .dashboard-wrapper {
   background-color: #e0e0e0;
@@ -40,12 +40,12 @@ body {
   background-color: #9e9e9e; }
 
 .white-theme .feed-title:hover {
-  color: #d49b00; }
+  color: #8bc34a; }
 
 .white-theme .feed-item {
   background-color: #e0e0e0; }
   .white-theme .feed-item:hover {
-    background-color: rgba(212, 155, 0, 0.5); }
+    background-color: rgba(139, 195, 74, 0.5); }
 
 .white-theme .account-wrapper,
 .white-theme .graphs-wrapper,
@@ -56,7 +56,7 @@ body {
 .white-theme .navigation-wrapper {
   color: #2f2f2f; }
   .white-theme .navigation-wrapper .nav-items p:hover {
-    color: #d49b00; }
+    color: #8bc34a; }
   .white-theme .navigation-wrapper .nav-drop {
     background-color: transparent; }
 
@@ -273,6 +273,9 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: center; }
+
+.mixed-chart {
+  color: #2f2f2f; }
 
 button {
   background: #e0e0e0;

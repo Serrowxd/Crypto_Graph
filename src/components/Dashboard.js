@@ -30,7 +30,7 @@ function Dashboard(props) {
         {/* Suggested Graph */}
         <div className="right-dashboard">
           <h1>{props.crypto}</h1>
-          <Charts />
+          <Charts themeSwap={props.themeSwap} />
         </div>
       </div>
 
