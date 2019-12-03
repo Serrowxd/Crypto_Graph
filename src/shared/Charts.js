@@ -27,6 +27,8 @@ class Charts extends Component {
     };
 
     // ChartJS Please Work
+    // X-Axis lines will not respond to color updates
+    // Documentation is trash
     this.state = {
       optionsMixedChart: {
         chart: {
