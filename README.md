@@ -4,6 +4,8 @@ Real-Time Crypto Analysis built with React and NodeJS
 
 This is a demonstration of JavaScript mastery in a full-stack environment, as well as real-time data consumption and manipulation.
 
+**In order to log-in you'll need to use the provided dummy logins under "Dummy Logins" below**
+
 [Deployment](https://happy-archimedes-9b9973.netlify.com) -- Please view it at 1920x1080, it's not made for anything lower at the moment.
 
 The deployment is currently in development state, so it will take you directly to the dashboard. To see the login features and landing page, you'll have to logout. I'll keep this updated for any future changes to this portion of the functionality.
@@ -24,6 +26,10 @@ Backend will be it's own separate repository to allow for front-end deployments.
 | Front-End needs to be built and designed (wireframe)                 |   Yes   |  Yes   |
 | Cleanup SCSS files, reused wrappers should be one class name         |   Yes   |  Yes   |
 | Dark and Light Theme transition                                      |   Yes   |  Yes   |
+| Users can login                                                      |   Yes   |  Yes   |
+| Login requires password                                              |   Yes   |  Yes   |
+| Error when logging in with the wrong username / password (Dynamic)   |   Yes   |   No   |
+| Login state should persist across reloads (No Automatic Logout)      |   Yes   |   No   |
 | Front-End needs to be polished                                       |   No    |   No   |
 | Graphs should take-in data via API call (MVP)                        |   No    |   No   |
 | Graphs should take-in data via websocket (stretch)                   |   No    |   No   |
@@ -37,14 +43,6 @@ Backend will be it's own separate repository to allow for front-end deployments.
 | _Add Backend Tasks_                                                  |   No    |   No   |
 | --                                                                   |   --    |   --   |
 
-### How to use it
-
-`npm run scss` - starts the scss watcher, compiles everything from scss into css.
-
-`yarn start` - starts the react local server
-
-Currently there is no working back-end, I will update the readme when it's properly functional.
-
 ### Dummy Logins
 
 | Username | Password | Name  |   Coin   | Theme |
@@ -54,6 +52,14 @@ Currently there is no working back-end, I will update the readme when it's prope
 
 **Note that themes are not currently working with different accounts**
 **This feature is future dated, it's a work-in-progress**
+
+### How to use it
+
+`npm run scss` - starts the scss watcher, compiles everything from scss into css.
+
+`yarn start` - starts the react local server
+
+Currently there is no working back-end, I will update the readme when it's properly functional.
 
 ### Future Dated
 
