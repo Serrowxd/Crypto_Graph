@@ -39,7 +39,7 @@ function App() {
     if (Users.hasOwnProperty(usern)) {
       loginHandler(usern, userpass);
     } else {
-      console.log('I broke :(');
+      console.log('Username does not exist');
     }
   }
 
