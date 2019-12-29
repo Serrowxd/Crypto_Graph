@@ -11,7 +11,7 @@ function Landing(props) {
 
   function loginModalHandler() {
     setModal(!modal);
-    props.login();
+    // props.login();
   }
 
   function headerLoginHandler() {
@@ -39,7 +39,13 @@ function Landing(props) {
         </div>
       </div>
 
-      <LoginModal header={header} showModal={modal} modalHandler={modalHandler} loginModalHandler={loginModalHandler} />
+      <LoginModal
+        header={header}
+        showModal={modal}
+        checkLogin={props.checkLogin}
+        modalHandler={modalHandler}
+        loginModalHandler={loginModalHandler}
+      />
     </div>
   );
 }

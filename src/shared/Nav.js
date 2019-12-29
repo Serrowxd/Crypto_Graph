@@ -18,7 +18,7 @@ function Navigation(props) {
         <p onClick={props.dropdownHandler}>{props.login}</p>
 
         <div className={props.dropdown ? 'nav-drop' : 'nav-drop hidden'}>
-          <div className="btn" onClick={props.loginHandler}>
+          <div className="btn" onClick={props.logoutHandler}>
             {props.login}
           </div>
         </div>
