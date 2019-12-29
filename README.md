@@ -45,6 +45,16 @@ Backend will be it's own separate repository to allow for front-end deployments.
 
 Currently there is no working back-end, I will update the readme when it's properly functional.
 
+### Dummy Logins
+
+| Username | Password | Name  |   Coin   | Theme |
+| :------: | :------: | :---: | :------: | :---: |
+|   kjol   |   pass   | Kevin | Bitcoin  | Dark  |
+|  jcoop   | notpass  | Jared | Dogecoin | Light |
+
+**Note that themes are not currently working with different accounts**
+**This feature is future dated, it's a work-in-progress**
+
 ### Future Dated
 
 Move all SCSS from `styles.scss` into separate files, re-import into the main for clean style management.
