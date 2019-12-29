@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Navigation, Charts } from './shared/shareReduce';
+import { Navigation } from './shared/shareReduce';
 import { Landing, Dashboard, Account, Graphs, Settings } from './components/compReduce';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 

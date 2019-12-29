@@ -14,6 +14,8 @@ Backend will now be part of the MVP - it will generate random numbers that are s
 
 Backend will be it's own separate repository to allow for front-end deployments.
 
+!! [ApexCharts Documentation](https://apexcharts.com/docs/installation/) !!
+
 ## The Board
 
 | Task List                                                            | Started | Merged |
