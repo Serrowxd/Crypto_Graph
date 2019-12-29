@@ -27,6 +27,7 @@ function Dashboard(props) {
             </Link>
           </div>
         </div>
+
         {/* Suggested Graph */}
         <div className="right-dashboard">
           <h1>{props.crypto}</h1>
