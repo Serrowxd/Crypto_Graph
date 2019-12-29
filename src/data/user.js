@@ -1,4 +1,5 @@
 // User Object
+// This file isn't used anymore, it's being kept for the sake of debugging in the future
 const Users = {
   kjol: {
     username: 'kjol',
