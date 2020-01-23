@@ -35,23 +35,35 @@ function App() {
     windowChecker();
   }, []);
 
+  // TODO
+  // Maybe remove window alerts?
+  // Persist login through reloads
+
   function checkLogin(usern, userpass) {
+    let uname = document.getElementById('user-req');
     if (Users.hasOwnProperty(usern)) {
       loginHandler(usern, userpass);
     } else {
-      console.log('Username does not exist');
+      window.alert('Username does not exist');
+      // Alert with red text
+      uname.classList.remove('hidden');
     }
   }
 
   function loginHandler(usern, userpass) {
     let value = Users[usern];
+    let upass = document.getElementById('pass-req');
+    let uname = document.getElementById('user-req');
 
     if (usern === value.username && userpass === value.password) {
       setUser(value.name);
       setCrypto(value.coin);
       setLogin(true);
     } else {
-      console.log('Wrong password');
+      window.alert('Wrong password');
+      // Alert with red text
+      uname.classList.add('hidden');
+      upass.classList.remove('hidden');
     }
   }
 

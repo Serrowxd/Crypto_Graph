@@ -53,6 +53,19 @@ $landing-bkg: url('../../assets/blurredtest.png');
   width: 5rem;
 }
 
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.error {
+  color: red;
+  font-size: 0.75rem;
+  text-align: center;
+  align-self: center;
+  padding: 0 1rem;
+}
+
 // !! Light Theme
 
 .white-theme {
@@ -366,11 +379,6 @@ $landing-bkg: url('../../assets/blurredtest.png');
     margin-top: 2.25rem;
     margin-right: 0.5rem;
   }
-
-  .hidden {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 .sub-nav {
@@ -464,6 +472,10 @@ button {
       padding: 0.5rem;
       margin: 1rem;
     }
+  }
+
+  .modal-text {
+    display: flex;
   }
 
   .buttons {

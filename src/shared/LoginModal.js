@@ -22,6 +22,8 @@ function LoginModal(props) {
     console.log(userPass);
   }
 
+  // on fail, show error text, clear inputs
+
   return (
     <div className={props.showModal ? 'modal' : 'modal hidemodal'}>
       <form className="modal-wrapper">
@@ -29,9 +31,19 @@ function LoginModal(props) {
           <h1>{props.header}</h1>
         </div>
         <div className="inputs">
-          <p>Username</p>
+          <div className="modal-text">
+            <p>Username</p>
+            <p id="user-req" className="error hidden">
+              Required
+            </p>
+          </div>
           <input type="text" value={userName} onChange={userNameHandler} name="username" autoComplete="off" />
-          <p>Password</p>
+          <div className="modal-text">
+            <p>Password</p>
+            <p id="pass-req" className="error hidden">
+              Required
+            </p>
+          </div>
           <input type="password" onChange={userPassHandler} name="password" autoComplete="off" />
         </div>
         <div className="buttons">

@@ -28,7 +28,7 @@ Backend will be it's own separate repository to allow for front-end deployments.
 | Dark and Light Theme transition                                      |   Yes   |  Yes   |
 | Users can login                                                      |   Yes   |  Yes   |
 | Login requires password                                              |   Yes   |  Yes   |
-| Error when logging in with the wrong username / password (Dynamic)   |   Yes   |   No   |
+| Error when logging in with the wrong username / password (Dynamic)   |   Yes   |  Yes   |
 | Login state should persist across reloads (No Automatic Logout)      |   Yes   |   No   |
 | Front-End needs to be polished                                       |   No    |   No   |
 | Graphs should take-in data via API call (MVP)                        |   No    |   No   |
