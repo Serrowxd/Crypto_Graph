@@ -3,15 +3,19 @@
     "username": "kjol",
     "password": "pass",
     "name": "Kevin",
+    "fname": "Kevin Jolley",
     "theme": "dark",
-    "coin": "Bitcoin"
+    "coin": "Bitcoin",
+    "pfp": "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
   },
 
   "jcoop": {
     "username": "jcoop",
     "password": "notpass",
     "name": "Jared",
+    "fname": "Jared Cooper",
     "theme": "light",
-    "coin": "Dogecoin"
+    "coin": "Dogecoin",
+    "pfp": "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
   }
 }

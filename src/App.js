@@ -10,6 +10,7 @@ function App() {
   const [dropdown, setDropdown] = useState(false);
   const [login, setLogin] = useState(false);
   const [user, setUser] = useState('');
+  const [userObj, setObj] = useState({ fname: '', pfp: '' });
   const [crypto, setCrypto] = useState('');
   const [navtype, setNavType] = useState(false);
   const [theme, setTheme] = useState(false);
@@ -58,6 +59,10 @@ function App() {
       setUser(value.name);
       setCrypto(value.coin);
       setLogin(true);
+
+      userObj.fname = value.fname;
+      userObj.pfp = value.pfp;
+
       // window.location.href = '/dashboard';
     } else {
       window.alert('Wrong password');
@@ -111,7 +116,7 @@ function App() {
           <Graphs />
         </Route>
         <Route path="/account">
-          <Account username={user} crypto={crypto} theme={theme} />
+          <Account username={user} crypto={crypto} fname={userObj.fname} img={userObj.pfp} />
         </Route>
         <Route path="/settings">
           <Settings updateTheme={themeUpdater} />

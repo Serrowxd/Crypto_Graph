@@ -304,35 +304,17 @@ $landing-bkg: url('../../assets/blurredtest.png');
 // Account
 .account-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   background-color: $black;
   color: $white;
-}
-
-.leftAcc-wrapper,
-.rightAcc-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-}
-
-.leftAcc-wrapper {
   img {
     padding: 1rem;
   }
   h1 {
     font-size: 2rem;
-  }
-}
-
-.rightAcc-wrapper {
-  font-size: 1.25rem;
-  p {
-    padding: 1rem;
   }
 }
 

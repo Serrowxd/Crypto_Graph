@@ -30,13 +30,16 @@ Backend will be it's own separate repository to allow for front-end deployments.
 | Login requires password                                              |   Yes   |  Yes   |    /    |
 | Error when logging in with the wrong username / password (Dynamic)   |   Yes   |  Yes   |    /    |
 | Login state should persist across reloads (No Automatic Logout)      |   Yes   |   No   |   Yes   |
-| Finish Account Page                                                  |   Yes   |   No   |    /    |
+| Finish Account Page                                                  |   Yes   |  Yes   |    /    |
 | Finish Settings Page                                                 |   No    |   No   |    /    |
-| Find use for News Feed                                               |   No    |   No   |    /    |
 | Finish Graphs Page                                                   |   No    |   No   |    /    |
-| Front-End needs to be polished                                       |   No    |   No   |    /    |
-| Graphs should take-in data via API call (MVP)                        |   No    |   No   |    /    |
-| Graphs should take-in data via websocket (stretch)                   |   No    |   No   |    /    |
+| Find use for News Feed                                               |   No    |   No   |    /    |
+| Polish Account Page                                                  |   No    |   No   |   Yes   |
+| Polish Settings Page                                                 |   No    |   No   |   Yes   |
+| Polish Graphs Page                                                   |   No    |   No   |   Yes   |
+| Front-End needs to be polished                                       |   No    |   No   |   Yes   |
+| Graphs should take-in data via API call (MVP)                        |   No    |   No   |   Yes   |
+| Graphs should take-in data via websocket (stretch)                   |   No    |   No   |   Yes   |
 | All graphs should have the same component, only taking in props      |   No    |   No   |    /    |
 | API calls should be handled via a shared action function             |   No    |   No   |    /    |
 | Single graphs should pull data through the same function as the main |   No    |   No   |    /    |
