@@ -213,12 +213,34 @@ body {
 
 .account-wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   background-color: #2f2f2f;
   color: #f5f5f5; }
+
+.leftAcc-wrapper,
+.rightAcc-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%; }
+
+.leftAcc-wrapper img {
+  padding: 1rem; }
+
+.leftAcc-wrapper h1 {
+  font-size: 2rem; }
+
+.rightAcc-wrapper {
+  font-size: 1.25rem; }
+  .rightAcc-wrapper p {
+    padding: 1rem; }
+
+.user-image {
+  width: 20rem;
+  height: auto; }
 
 .graphs-wrapper {
   display: flex;

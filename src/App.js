@@ -37,7 +37,6 @@ function App() {
 
   // TODO
   // Maybe remove window alerts?
-  // !! Persist login through reloads
 
   function checkLogin(usern, userpass) {
     let uname = document.getElementById('user-req');
@@ -59,6 +58,7 @@ function App() {
       setUser(value.name);
       setCrypto(value.coin);
       setLogin(true);
+      // window.location.href = '/dashboard';
     } else {
       window.alert('Wrong password');
       // Alert with red text
@@ -89,6 +89,8 @@ function App() {
       />
 
       <Switch>
+        {/* Ternary on exact path is causing the reload bug */}
+        {/* ? Reroute on login submission to /dashboard ? */}
         <Route exact path="/">
           {login ? (
             <Dashboard user={user} crypto={crypto} themeSwap={theme} window={windowChecker} />
@@ -96,11 +98,20 @@ function App() {
             <Landing login={loginHandler} checkLogin={checkLogin} />
           )}
         </Route>
+
+        {/* Attempted fix */}
+        {/* <Route exact path="/">
+          <Landing login={loginHandler} checkLogin={checkLogin} />
+        </Route>
+        <Route path="/dashboard">
+          <Dashboard user={user} crypto={crypto} themeSwap={theme} window={windowChecker} />
+        </Route> */}
+
         <Route path="/graphs">
           <Graphs />
         </Route>
         <Route path="/account">
-          <Account />
+          <Account username={user} crypto={crypto} theme={theme} />
         </Route>
         <Route path="/settings">
           <Settings updateTheme={themeUpdater} />

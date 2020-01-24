@@ -30,6 +30,10 @@ Backend will be it's own separate repository to allow for front-end deployments.
 | Login requires password                                              |   Yes   |  Yes   |    /    |
 | Error when logging in with the wrong username / password (Dynamic)   |   Yes   |  Yes   |    /    |
 | Login state should persist across reloads (No Automatic Logout)      |   Yes   |   No   |   Yes   |
+| Finish Account Page                                                  |   Yes   |   No   |    /    |
+| Finish Settings Page                                                 |   No    |   No   |    /    |
+| Find use for News Feed                                               |   No    |   No   |    /    |
+| Finish Graphs Page                                                   |   No    |   No   |    /    |
 | Front-End needs to be polished                                       |   No    |   No   |    /    |
 | Graphs should take-in data via API call (MVP)                        |   No    |   No   |    /    |
 | Graphs should take-in data via websocket (stretch)                   |   No    |   No   |    /    |
@@ -74,6 +78,9 @@ Login persistence will require a contained backend, currently the backend doesn'
 
 - Hitting enter on the account creation or login screens will not automatically trigger the submission.
 - Light theme button text is broken
+- Logging out via anywhere but the homescreen does not reroute the user to the landing page, it will reroute once you hit any link or reload the page.
+- Theme does not persist when logging into secondary accounts
+- Props are not passed to account page on reload?
 
 ### Logic Breakdown
 
