@@ -22,7 +22,12 @@ function LoginModal(props) {
     console.log(userPass);
   }
 
-  // on fail, show error text, clear inputs
+  // Handles the enter input for password sumbission
+  function submitHandler(e) {
+    if (e.key === 'Enter') {
+      checkLoginHanlder();
+    }
+  }
 
   return (
     <div className={props.showModal ? 'modal' : 'modal hidemodal'}>
@@ -44,7 +49,13 @@ function LoginModal(props) {
               Required
             </p>
           </div>
-          <input type="password" onChange={userPassHandler} name="password" autoComplete="off" />
+          <input
+            type="password"
+            onChange={userPassHandler}
+            onKeyPress={submitHandler}
+            name="password"
+            autoComplete="off"
+          />
         </div>
         <div className="buttons">
           <div className="btn" onClick={checkLoginHanlder}>

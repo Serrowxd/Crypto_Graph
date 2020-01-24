@@ -99,7 +99,7 @@ function App() {
           )}
         </Route>
 
-        {/* Attempted fix */}
+        {/* Attempted fix, breaks styling and the passing of props */}
         {/* <Route exact path="/">
           <Landing login={loginHandler} checkLogin={checkLogin} />
         </Route>

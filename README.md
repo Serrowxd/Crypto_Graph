@@ -77,10 +77,11 @@ Login persistence will require a contained backend, currently the backend doesn'
 ### Known Bugs
 
 - Hitting enter on the account creation or login screens will not automatically trigger the submission.
-- Light theme button text is broken
+- Light theme button text is broken.
 - Logging out via anywhere but the homescreen does not reroute the user to the landing page, it will reroute once you hit any link or reload the page.
-- Theme does not persist when logging into secondary accounts
+- Theme does not persist when logging into secondary accounts.
 - Props are not passed to account page on reload?
+- Create Account functions exactly like the login equivalent.
 
 ### Logic Breakdown
 
