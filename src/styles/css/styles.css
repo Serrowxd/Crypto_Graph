@@ -38,7 +38,8 @@ body {
   padding: 0 1rem; }
 
 .white-theme .btn {
-  border: 1px solid #2f2f2f; }
+  border: 1px solid #2f2f2f;
+  color: #2f2f2f; }
   .white-theme .btn:hover {
     background-color: #8bc34a;
     border: 1px solid #8bc34a; }

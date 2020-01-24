@@ -71,6 +71,7 @@ $landing-bkg: url('../../assets/blurredtest.png');
 .white-theme {
   .btn {
     border: 1px solid $black;
+    color: $black;
 
     &:hover {
       background-color: $green;
