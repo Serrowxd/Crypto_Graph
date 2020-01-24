@@ -37,7 +37,7 @@ function App() {
 
   // TODO
   // Maybe remove window alerts?
-  // Persist login through reloads
+  // !! Persist login through reloads
 
   function checkLogin(usern, userpass) {
     let uname = document.getElementById('user-req');

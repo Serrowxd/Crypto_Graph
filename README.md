@@ -20,28 +20,31 @@ Backend will be it's own separate repository to allow for front-end deployments.
 
 ## The Board
 
-| Task List                                                            | Started | Merged |
-| -------------------------------------------------------------------- | :-----: | :----: |
-| **!! Front End !!**                                                  |   --    |   --   |
-| Front-End needs to be built and designed (wireframe)                 |   Yes   |  Yes   |
-| Cleanup SCSS files, reused wrappers should be one class name         |   Yes   |  Yes   |
-| Dark and Light Theme transition                                      |   Yes   |  Yes   |
-| Users can login                                                      |   Yes   |  Yes   |
-| Login requires password                                              |   Yes   |  Yes   |
-| Error when logging in with the wrong username / password (Dynamic)   |   Yes   |  Yes   |
-| Login state should persist across reloads (No Automatic Logout)      |   Yes   |   No   |
-| Front-End needs to be polished                                       |   No    |   No   |
-| Graphs should take-in data via API call (MVP)                        |   No    |   No   |
-| Graphs should take-in data via websocket (stretch)                   |   No    |   No   |
-| All graphs should have the same component, only taking in props      |   No    |   No   |
-| API calls should be handled via a shared action function             |   No    |   No   |
-| Single graphs should pull data through the same function as the main |   No    |   No   |
-| **!! Back-End !!**                                                   |   --    |   --   |
-| Back-end server should contain a RNG based API and schema            |   No    |   No   |
-| Back-end server should use GraphQL                                   |   No    |   No   |
-| A single graph should be visible on a dynamic route                  |   No    |   No   |
-| _Add Backend Tasks_                                                  |   No    |   No   |
-| --                                                                   |   --    |   --   |
+| Task List                                                            | Started | Merged | Blocked |
+| -------------------------------------------------------------------- | :-----: | :----: | :-----: |
+| **!! Front End !!**                                                  |   --    |   --   |   --    |
+| Front-End needs to be built and designed (wireframe)                 |   Yes   |  Yes   |    /    |
+| Cleanup SCSS files, reused wrappers should be one class name         |   Yes   |  Yes   |    /    |
+| Dark and Light Theme transition                                      |   Yes   |  Yes   |    /    |
+| Users can login                                                      |   Yes   |  Yes   |    /    |
+| Login requires password                                              |   Yes   |  Yes   |    /    |
+| Error when logging in with the wrong username / password (Dynamic)   |   Yes   |  Yes   |    /    |
+| Login state should persist across reloads (No Automatic Logout)      |   Yes   |   No   |   Yes   |
+| Front-End needs to be polished                                       |   No    |   No   |    /    |
+| Graphs should take-in data via API call (MVP)                        |   No    |   No   |    /    |
+| Graphs should take-in data via websocket (stretch)                   |   No    |   No   |    /    |
+| All graphs should have the same component, only taking in props      |   No    |   No   |    /    |
+| API calls should be handled via a shared action function             |   No    |   No   |    /    |
+| Single graphs should pull data through the same function as the main |   No    |   No   |    /    |
+| _Add Frontend Tasks_                                                 |   --    |   --   |   --    |
+| **!! Back-End !!**                                                   |   --    |   --   |   --    |
+| Back-end server should contain a RNG based API and schema            |   No    |   No   |    /    |
+| Back-end server should use GraphQL                                   |   No    |   No   |    /    |
+| A single graph should be visible on a dynamic route                  |   No    |   No   |    /    |
+| _Add Backend Tasks_                                                  |   --    |   --   |   --    |
+| --                                                                   |   --    |   --   |   --    |
+
+`Blocked` = Blocked by a future dated feature or task.
 
 ### Dummy Logins
 
@@ -64,6 +67,8 @@ Currently there is no working back-end, I will update the readme when it's prope
 ### Future Dated
 
 Move all SCSS from `styles.scss` into separate files, re-import into the main for clean style management.
+
+Login persistence will require a contained backend, currently the backend doesn't exist and is being run through a singular json file, so in order to properly persist login through cookies we'll need to create a backend that works. This is future dated until I create a backend.
 
 ### Known Bugs
 
