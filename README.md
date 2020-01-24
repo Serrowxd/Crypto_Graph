@@ -72,7 +72,8 @@ Login persistence will require a contained backend, currently the backend doesn'
 
 ### Known Bugs
 
-- Clicking the Existing User or Create Account pass-throughs that take you to the dashboard will cause the navigation dropdown for login/logout to trigger. This does not happen when you click the login button direclty.
+- Hitting enter on the account creation or login screens will not automatically trigger the submission.
+- Light theme button text is broken
 
 ### Logic Breakdown
 
