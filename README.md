@@ -30,6 +30,8 @@ Backend will be it's own separate repository to allow for front-end deployments.
 | Login requires password                                              |   Yes   |  Yes   |    /    |
 | Error when logging in with the wrong username / password (Dynamic)   |   Yes   |  Yes   |    /    |
 | Login state should persist across reloads (No Automatic Logout)      |   Yes   |   No   |   Yes   |
+| "Remember me" button for option login persist                        |   No    |   No   |   Yes   |
+| Dashboard routing should be different from the landing page          |   Yes   |   No   |   Yes   |
 | Finish Account Page                                                  |   Yes   |  Yes   |    /    |
 | Finish Settings Page                                                 |   No    |   No   |   Yes   |
 | Finish Graphs Page                                                   |   Yes   |   No   |    /    |
