@@ -5,6 +5,9 @@ function Landing(props) {
   const [modal, setModal] = useState(false);
   const [header, setHeader] = useState();
 
+  // Modals and state related should be moved to App.js along with the rest of the relative modal data.
+  // Data should be passed to this component via props, allowing the Navigation to modify the modal state.
+
   function modalHandler() {
     setModal(!modal);
   }

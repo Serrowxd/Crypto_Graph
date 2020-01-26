@@ -3,7 +3,11 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function Navigation(props) {
   return (
-    <div className={props.nav ? 'navigation-wrapper sub-nav' : 'navigation-wrapper'}>
+    <div
+      className={
+        props.nav ? 'navigation-wrapper sub-nav' : 'navigation-wrapper'
+      }
+    >
       <h1>Crypto Graph</h1>
       <div className="nav-items">
         <Link to="/">

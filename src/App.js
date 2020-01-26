@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Navigation } from './shared/shareReduce';
-import { Landing, Dashboard, Account, Graphs, Settings } from './components/compReduce';
+import {
+  Landing,
+  Dashboard,
+  Account,
+  Graphs,
+  Settings
+} from './components/compReduce';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const Users = require('./data/users.json');
@@ -38,7 +44,7 @@ function App() {
 
   // TODO
   // Maybe remove window alerts?
-  //
+  // Dropdown needs to be pruned and replaced with a viable dropdown
 
   function checkLogin(usern, userpass) {
     let uname = document.getElementById('user-req');
@@ -82,8 +88,12 @@ function App() {
     setDropdown(!dropdown);
   }
 
+  // dropdownHanlder needs to be replaced with the modal handler from the landing.
+
   return (
-    <div className={theme ? 'global-container white-theme' : 'global-container'}>
+    <div
+      className={theme ? 'global-container white-theme' : 'global-container'}
+    >
       <Navigation
         login={login ? 'Logout' : 'Login'}
         loginHandler={loginHandler}
@@ -99,7 +109,12 @@ function App() {
         {/* ? Reroute on login submission to /dashboard ? */}
         <Route exact path="/">
           {login ? (
-            <Dashboard user={user} crypto={crypto} themeSwap={theme} window={windowChecker} />
+            <Dashboard
+              user={user}
+              crypto={crypto}
+              themeSwap={theme}
+              window={windowChecker}
+            />
           ) : (
             <Landing login={loginHandler} checkLogin={checkLogin} />
           )}
@@ -117,7 +132,12 @@ function App() {
           <Graphs />
         </Route>
         <Route path="/account">
-          <Account username={user} crypto={crypto} fname={userObj.fname} img={userObj.pfp} />
+          <Account
+            username={user}
+            crypto={crypto}
+            fname={userObj.fname}
+            img={userObj.pfp}
+          />
         </Route>
         <Route path="/settings">
           <Settings updateTheme={themeUpdater} />
