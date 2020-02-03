@@ -110,7 +110,7 @@ Login persistence will require a contained backend, currently the backend doesn'
 
 ### Known Bugs
 
-- Logging out via anywhere but the homescreen does not reroute the user to the landing page, it will reroute once you hit any link or reload the page.
+- Logging out via anywhere but the homescreen does not reroute the user to the landing page, it will reset to the homepage when returning to the base route.
 - Theme does not persist when logging into secondary accounts.
 - Props are not passed to account page on reload?
 - Create Account functions exactly like the login equivalent.
