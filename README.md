@@ -47,6 +47,8 @@ Backend will be it's own separate repository to allow for front-end deployments.
 | _Add Frontend Tasks_                                                 |   --    |   --   |   --    |     --      |
 | --                                                                   |   --    |   --   |   --    |     --      |
 
+---
+
 | **Back End**                                                             | Started | Merged | Blocked | Completed |
 | ------------------------------------------------------------------------ | :-----: | :----: | :-----: | :-------: |
 | Back-end server should use NodeJS                                        |   No    |   No   |         |           |
