@@ -81,6 +81,7 @@ All styling is done by hand, with the exception of the charts - which use Apexch
 | --                                                                       |   --    |   --   |   --    |    --     |
 
 `Blocked` = Blocked by a future dated feature or task.
+
 `Completed` = Feature complete or ticket requirements are filled and tested.
 
 ### Dummy Logins
