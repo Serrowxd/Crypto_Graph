@@ -10,11 +10,28 @@ This is a demonstration of JavaScript mastery in a full-stack environment, as we
 
 The deployment is currently in development state, so it will take you directly to the dashboard. To see the login features and landing page, you'll have to logout. I'll keep this updated for any future changes to this portion of the functionality.
 
-**UPDATE**
-
 Backend will now be part of the MVP - it will generate random numbers that are stored in the schema that will be pushed to the front-end as part of a makeshift API. This will allow the simulation of real-time data flow without having a real-time data flow to attach to.
 
-Backend will be it's own separate repository to allow for front-end deployments.
+Backend will be it's own separate repository to allow for front-end deployments - this will be added when the back is properly split from the front for the sake of deployment. For now both will live in the same repository under secondary folders.
+
+**Useful Comands for development:**
+
+- `npm start` - starts the local react server
+- `npm run scss` - starts the local scss compiler
+
+All styling is handled through `./src/styles/`, scss is compiled from the `scss` folder into the `css` folder.
+
+**Styling Breakdown:**
+
+All styling is done by hand, with the exception of the charts - which use Apexcharts.
+
+- `Global` - Contains all the global styling, typically used to reset anchor tags and handle the font-family.
+- `Mixins` - Colors, Images, and other styling bits that are used consistently.
+- `Misc` - Specific classNames that are used around the page to perform small tasks.
+- `Light Theme` - All the styling used in the light theme, it is used to overwrite the base styling where needed.
+- `Components` - All components that are used in the page, all components have a comment above to identify them.
+- `Shared Components` - Components that are shared and used multiple times - modals, buttons, navigation, etc.
+- `Pchart` - Chart overrides, given the chart is the only imported styling on the page.
 
 !! [ApexCharts Documentation](https://apexcharts.com/docs/installation/) !!
 
@@ -101,9 +118,9 @@ Login persistence will require a contained backend, currently the backend doesn'
 
 Since this is going to be a happy place for me while I work on this, I'm going to store notes here.
 
-The server is going to hit the API, pulling down all the relevant information, then route it directly through a websocket that can be hit by an infinite number of users - thus keeping the number of hits I'm doing to the main API at a minimum, while still keeping real-time data flowing for all my users.
+The front-end will pull chart-level data every (x) seconds, updating the graph and allowing users to see their prefered currency on the main dashboard, defaulting to Bitcoin if not already set.
 
-The front-end will connect to that websocket that's constantly publishing data and display it using a graphing service onto a single dashboard. Users will be able to see their prefered as the #1 currency, or if it's not set they'll see Bitcoin, followed by two popular currencies below it. The left side will contain a fold-out Navigation menu, while folded in it will have simple material icons, expanded it will show the text.
+The back-end will randomly generate crypto data every (x) seconds, adding the new number to an array of data. This array of data will be acquired by the front-end and pruned down into the last (x) numbers, which will be used to show current cypto information.
 
 **MVP - Minimum Viable Product**
 
