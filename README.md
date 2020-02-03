@@ -20,44 +20,44 @@ Backend will be it's own separate repository to allow for front-end deployments.
 
 ## The Board
 
-| Task List                                                                | Started | Merged | Blocked |
-| ------------------------------------------------------------------------ | :-----: | :----: | :-----: |
-| **!! Front End !!**                                                      |   --    |   --   |   --    |
-| Front-End needs to be built and designed (wireframe)                     |   Yes   |  Yes   |    /    |
-| Cleanup SCSS files, reused wrappers should be one class name             |   Yes   |  Yes   |    /    |
-| Dark and Light Theme transition                                          |   Yes   |  Yes   |    /    |
-| Users can login                                                          |   Yes   |  Yes   |    /    |
-| Login requires password                                                  |   Yes   |  Yes   |    /    |
-| Error when logging in with the wrong username / password (Dynamic)       |   Yes   |  Yes   |    /    |
-| Login state should persist across reloads (No Automatic Logout)          |   Yes   |   No   |   Yes   |
-| "Remember me" button for option login persist                            |   No    |   No   |   Yes   |
-| Dashboard routing should be different from the landing page              |   Yes   |   No   |   Yes   |
-| Finish Account Page                                                      |   Yes   |  Yes   |    /    |
-| Finish Settings Page                                                     |   No    |   No   |   Yes   |
-| Finish Graphs Page                                                       |   Yes   |   No   |    /    |
-| Find use for News Feed                                                   |   No    |   No   |    /    |
-| Polish Account Page                                                      |   No    |   No   |   Yes   |
-| Polish Settings Page                                                     |   No    |   No   |   Yes   |
-| Polish Graphs Page                                                       |   No    |   No   |   Yes   |
-| Front-End needs to be polished                                           |   No    |   No   |   Yes   |
-| Graphs should take-in data via API call (MVP)                            |   No    |   No   |   Yes   |
-| Graphs should take-in data via websocket (stretch)                       |   No    |   No   |   Yes   |
-| All graphs should have the same component, only taking in props          |   No    |   No   |    /    |
-| API calls should be handled via a shared action function                 |   No    |   No   |    /    |
-| Single graphs should pull data through the same function as the main     |   No    |   No   |    /    |
-| _Add Frontend Tasks_                                                     |   --    |   --   |   --    |
-| **!! Back-End !!**                                                       |   --    |   --   |   --    |
-| Back-end server should use NodeJS                                        |   No    |   No   |    /    |
-| Back-end server should use GraphQL                                       |   No    |   No   |    /    |
-| Back-end server should contain a RNG for the crytpo data                 |   No    |   No   |    /    |
-| A single graph should be visible on a set endpoint (per currency)        |   No    |   No   |    /    |
-| All data should be held in the back-end                                  |   No    |   No   |    /    |
-| API can properly return data                                             |   No    |   No   |    /    |
-| User cookies are stored and acknolwedged by the login system (persist)   |   No    |   No   |    /    |
-| Data should come in blocks from each endpoint based on what is requested |   No    |   No   |    /    |
-| New crypto data should be created, but should not overwrite old data     |   No    |   No   |    /    |
-| _Add Backend Tasks_                                                      |   --    |   --   |   --    |
-| --                                                                       |   --    |   --   |   --    |
+| Task List                                                                | Started | Merged | Blocked |  Completed  |
+| ------------------------------------------------------------------------ | :-----: | :----: | :-----: | :---------: |
+| **!! Front End !!**                                                      |   --    |   --   |   --    |     --      |
+| Front-End needs to be built and designed (wireframe)                     |   Yes   |  Yes   |         | `Completed` |
+| Cleanup SCSS files, reused wrappers should be one class name             |   Yes   |  Yes   |         | `Completed` |
+| Dark and Light Theme transition                                          |   Yes   |  Yes   |         | `Completed` |
+| Users can login                                                          |   Yes   |  Yes   |         | `Completed` |
+| Login requires password                                                  |   Yes   |  Yes   |         | `Completed` |
+| Error when logging in with the wrong username / password (Dynamic)       |   Yes   |  Yes   |         | `Completed` |
+| Login state should persist across reloads (No Automatic Logout)          |   Yes   |   No   | Blocked |             |
+| "Remember me" button for option login persist                            |   No    |   No   | Blocked |             |
+| Dashboard routing should be different from the landing page              |   Yes   |   No   | Blocked |             |
+| Finish Account Page                                                      |   Yes   |  Yes   |         | `Completed` |
+| Finish Settings Page                                                     |   No    |   No   | Blocked |             |
+| Finish Graphs Page                                                       |   Yes   |   No   |         |             |
+| Find use for News Feed                                                   |   No    |   No   |         |             |
+| Polish Account Page                                                      |   No    |   No   | Blocked |             |
+| Polish Settings Page                                                     |   No    |   No   | Blocked |             |
+| Polish Graphs Page                                                       |   No    |   No   | Blocked |             |
+| Front-End needs to be polished                                           |   No    |   No   | Blocked |             |
+| Graphs should take-in data via API call (MVP)                            |   No    |   No   | Blocked |             |
+| Graphs should take-in data via websocket (stretch)                       |   No    |   No   | Blocked |             |
+| All graphs should have the same component, only taking in props          |   No    |   No   |         |             |
+| API calls should be handled via a shared action function                 |   No    |   No   |         |             |
+| Single graphs should pull data through the same function as the main     |   No    |   No   |         |             |
+| _Add Frontend Tasks_                                                     |   --    |   --   |   --    |     --      |
+| **!! Back-End !!**                                                       |   --    |   --   |   --    |     --      |
+| Back-end server should use NodeJS                                        |   No    |   No   |         |             |
+| Back-end server should use GraphQL                                       |   No    |   No   |         |             |
+| Back-end server should contain a RNG for the crytpo data                 |   No    |   No   |         |             |
+| A single graph should be visible on a set endpoint (per currency)        |   No    |   No   |         |             |
+| All data should be held in the back-end                                  |   No    |   No   |         |             |
+| API can properly return data                                             |   No    |   No   |         |             |
+| User cookies are stored and acknolwedged by the login system (persist)   |   No    |   No   |         |             |
+| Data should come in blocks from each endpoint based on what is requested |   No    |   No   |         |             |
+| New crypto data should be created, but should not overwrite old data     |   No    |   No   |         |             |
+| _Add Backend Tasks_                                                      |   --    |   --   |   --    |     --      |
+| --                                                                       |   --    |   --   |   --    |     --      |
 
 `Blocked` = Blocked by a future dated feature or task.
 
